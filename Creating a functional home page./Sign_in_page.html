@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Sign in page" />
+    <title>Sign In Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" /> 
+    <link rel="stylesheet" href="sign_in_styles.css" type="text/css">
+    <script src="/functions.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="Title">Warren's Website</h1>
+      <!--Navigation bar at the top of the page. Links to different pages.-->
+      <nav>
+        <ul>
+            <li><a href="articles.html"><strong>Articles<i class="fa fa-file-text" aria-hidden="true"></i></strong></a></li>
+            <li><a href="people.html"><strong>People<i class="fa fa-users" aria-hidden="true"></i></strong></a></li>
+            <li><a href="videos.html"><strong>Videos<i class="fa fa-play" aria-hidden="true"></i></strong></a></li>
+            <li><a href="gallery.html"><strong>Gallery<i class="fa fa-camera" aria-hidden="true"></i></strong></a></li>
+            <li class="Join-button"><a href="join_now.html"><strong>Join Now</strong></a></li>
+            <li class="Sign-button"><a href="sign_in.html"><strong>Sign in</strong></a></li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+      <h2 class="tagline">Stay connected with everything <br />
+          happening in the gaming industry<br /></h2>
+          <!--Sign in details-->
+      <form method="post" action="https://Warren.com/practice-project/home-page">
+        <section role="region" aria-labelledby="sign-in">
+          <h2 id="sign-in">Sign In</h2>
+          <div class="email">
+            <label for="email-address">Email</label>
+            <input type="email" name="email-address" id="email-address" />
+          </div>
+          <div class="password">
+            <label for="password">password</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <div class="remember-me">
+            <label for="rememberME">Remember Me</label>
+            <input type="checkbox" value="isRememberMe" name="rememberME" id="rememberME" />
+          </div>
+          <div class="forgotten-password">
+            <a href="forgot-password.html"><strong>Forgot Password</strong></a>
+          </div>
+          <div class="sign-in">
+            <button type="submit" class=""sign-in value="Login" onclick="IsRememberMe()">Sign In</button>
+          </div>
+          <!--additional sign in options-->
+        <div class="options">
+          <p>OR</p>
+        </div>
+        <div class="google">
+          <button type="submit"><i class="fa fa-google" aria-hidden="true"></i> Continue with google</button>
+        </div>
+        <div class="join-now">
+          <button type="submit">New? Join Now</button>
+        </div>
+        </section>
+        <h3 class="Info">
+          Explore articles on upcoming games and events<br /> 
+          Watch trailers for the latest games or videos from your favourite content creators<br /> 
+          Connect with gamers across the world.<br />
+        </h3>
+        <img src="https://img.freepik.com/free-vector/worldwide-communication-concept_23-2147497259.jpg?w=1380&t=st=1690068302~exp=1690068902~hmac=9659854c50fd305b21a108ff8d164ac45c69c866fd80b6cc24181cb1680b89b5">
+    </main>
+    <footer>
+      <p>
+        Copyright me 2023
+      </p>
+      <address>
+        <strong><a href="https://warrensmith.org">Warren</a></strong><br />
+        <strong>The Grand Line</strong><br />
+        <strong>Water 7</strong><br />
+        <strong>Earth</strong><br />
+      </address>
+    </footer>
+  </body>
+</html>
