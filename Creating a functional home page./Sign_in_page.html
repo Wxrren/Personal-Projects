@@ -10,17 +10,18 @@
     <script src="/functions.js"></script>
   </head>
   <body>
+    <div id="container">
     <header>
       <h1 class="Title">Warren's Website</h1>
       <!--Navigation bar at the top of the page. Links to different pages.-->
       <nav>
         <ul>
-            <li><a href="articles.html"><strong>Articles<i class="fa fa-file-text" aria-hidden="true"></i></strong></a></li>
-            <li><a href="people.html"><strong>People<i class="fa fa-users" aria-hidden="true"></i></strong></a></li>
-            <li><a href="videos.html"><strong>Videos<i class="fa fa-play" aria-hidden="true"></i></strong></a></li>
-            <li><a href="gallery.html"><strong>Gallery<i class="fa fa-camera" aria-hidden="true"></i></strong></a></li>
-            <li class="Join-button"><a href="join_now.html"><strong>Join Now</strong></a></li>
-            <li class="Sign-button"><a href="sign_in.html"><strong>Sign in</strong></a></li>
+            <li id="articles"><a href="articles.html"><strong>Articles<i class="fa fa-file-text" aria-hidden="true"></i></strong></a></li>
+            <li id="people"><a href="people.html"><strong>People<i class="fa fa-users" aria-hidden="true"></i></strong></a></li>
+            <li id="videos"><a href="videos.html"><strong>Videos<i class="fa fa-play" aria-hidden="true"></i></strong></a></li>
+            <li id="gallery"><a href="gallery.html"><strong>Gallery<i class="fa fa-camera" aria-hidden="true"></i></strong></a></li>
+            <li class="Join-button" id="join"><a href="join_now.html"><strong>Join Now</strong></a></li>
+            <li class="Sign-button" id="sign"><a href="sign_in.html"><strong>Sign in</strong></a></li>
           </ul>
         </nav>
     </header>
@@ -33,11 +34,11 @@
           <h2 id="sign-in">Sign In</h2>
           <div class="email">
             <label for="email-address">Email</label>
-            <input type="email" name="email-address" id="email-address" />
+            <input type="email" name="email-address" id="email-address" required/>
           </div>
           <div class="password">
             <label for="password">password</label>
-            <input type="password" name="password" id="password" />
+            <input type="password" name="password" id="password" pattern="[a-z0-5]{8,}" required/>
           </div>
           <div class="remember-me">
             <label for="rememberME">Remember Me</label>
@@ -65,7 +66,7 @@
           Watch trailers for the latest games or videos from your favourite content creators<br /> 
           Connect with gamers across the world.<br />
         </h3>
-        <img src="https://img.freepik.com/free-vector/worldwide-communication-concept_23-2147497259.jpg?w=1380&t=st=1690068302~exp=1690068902~hmac=9659854c50fd305b21a108ff8d164ac45c69c866fd80b6cc24181cb1680b89b5">
+        <!--<img src="https://img.freepik.com/free-vector/worldwide-communication-concept_23-2147497259.jpg?w=1380&t=st=1690068302~exp=1690068902~hmac=9659854c50fd305b21a108ff8d164ac45c69c866fd80b6cc24181cb1680b89b5">-->
     </main>
     <footer>
       <p>
@@ -78,5 +79,6 @@
         <strong>Earth</strong><br />
       </address>
     </footer>
+  </div>
   </body>
 </html>
