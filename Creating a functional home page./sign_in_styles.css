@@ -1,20 +1,29 @@
 #container{
-  width: 70%;
+  width: 100%;
   margin: auto;
+  
 }
 
 @media screen and (max-width: 768px){
   #container{
-    width: 90%;
+    width: 100%;
     font-size: 70%;
-  }
+    color: red;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 
+
+  }
 }
 
 body {
     font-family: Helvetica;
     color: rgb(1, 26, 54);
-    background-image: url(https://img.freepik.com/free-photo/white-cloud-blue-sky_74190-2381.jpg?w=1800&t=st=1690066399~exp=1690066999~hmac=a6b995abb1f4d62fbf152fed0069a56ff10c38281f6020aa1c5c5160bc17c761)
+    background-image: url(https://img.freepik.com/free-photo/white-cloud-blue-sky_74190-2381.jpg?w=1800&t=st=1690066399~exp=1690066999~hmac=a6b995abb1f4d62fbf152fed0069a56ff10c38281f6020aa1c5c5160bc17c761);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
 }
 
 h1 {
@@ -34,7 +43,6 @@ h1 {
 header {
     width: 100%;
     height: 50px;
-    background: radial-gradient(#fffefe, #028670);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -76,3 +84,40 @@ nav > ul {
   .google {
     display: flex;
   }
+
+ #sign {
+  border: solid rgb(1, 26, 54);
+  margin: 0 auto 10px auto;
+  padding: 10px 0 0 5px;
+  max-width: 600px;
+  background-image: url(https://img.freepik.com/free-photo/white-cloud-blue-sky_74190-2381.jpg?w=1800&t=st=1690066399~exp=1690066999~hmac=a6b995abb1f4d62fbf152fed0069a56ff10c38281f6020aa1c5c5160bc17c761);
+ }
+
+
+ .forgotten-password a {
+  text-decoration: none;
+}
+
+.email, .password {
+  width: 50%;
+  text-align: start;
+  margin: 10px auto 10px auto;
+}
+
+#password, #email {
+  display: flex;
+  width: 250px;
+}
+
+
+.sign-in-button 
+
+button {
+  display: block;
+  margin: 1px auto;
+  width: 20%;
+  padding: 1px;
+  font-size: 20px;
+  background: linear-gradient(#FF7377, #66FFE5);
+  border: 2px solid #3b3b4f;
+}
