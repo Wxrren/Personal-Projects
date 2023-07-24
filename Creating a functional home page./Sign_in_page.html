@@ -14,6 +14,7 @@
     <header>
       <h1 class="Title">Warren's Website</h1>
       <!--Navigation bar at the top of the page. Links to different pages.-->
+      <section id="nav">
       <nav>
         <ul>
             <li id="articles"><a href="articles.html"><strong>Articles<i class="fa fa-file-text" aria-hidden="true"></i></strong></a></li>
@@ -21,35 +22,37 @@
             <li id="videos"><a href="videos.html"><strong>Videos<i class="fa fa-play" aria-hidden="true"></i></strong></a></li>
             <li id="gallery"><a href="gallery.html"><strong>Gallery<i class="fa fa-camera" aria-hidden="true"></i></strong></a></li>
             <li class="Join-button" id="join"><a href="join_now.html"><strong>Join Now</strong></a></li>
-            <li class="Sign-button" id="sign"><a href="sign_in.html"><strong>Sign in</strong></a></li>
+            <li class="Sign-button" id="signNav"><a href="sign_in.html"><strong>Sign in</strong></a></li>
           </ul>
         </nav>
+      </section>
     </header>
     <main>
       <h2 class="tagline">Stay connected with everything <br />
           happening in the gaming industry<br /></h2>
           <!--Sign in details-->
       <form method="post" action="https://Warren.com/practice-project/home-page">
-        <section role="region" aria-labelledby="sign-in">
-          <h2 id="sign-in">Sign In</h2>
+        <section id="sign" role="region" aria-labelledby="sign-in">
+          <div class="sign-in">
+          <h2 id="sign-in-prompt">Sign In</h2>
           <div class="email">
-            <label for="email-address">Email</label>
-            <input type="email" name="email-address" id="email-address" required/>
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required/>
           </div>
           <div class="password">
-            <label for="password">password</label>
+            <label for="password"><strong>password</strong></label>
             <input type="password" name="password" id="password" pattern="[a-z0-5]{8,}" required/>
           </div>
           <div class="remember-me">
             <label for="rememberME">Remember Me</label>
-            <input type="checkbox" value="isRememberMe" name="rememberME" id="rememberME" />
-          </div>
+            <input type="checkbox" value="isRememberMe" name="rememberME" id="rememberME" /></div>
           <div class="forgotten-password">
             <a href="forgot-password.html"><strong>Forgot Password</strong></a>
           </div>
-          <div class="sign-in">
+          <div class="sign-in-button">
             <button type="submit" class=""sign-in value="Login" onclick="IsRememberMe()">Sign In</button>
           </div>
+        </div>
           <!--additional sign in options-->
         <div class="options">
           <p>OR</p>
