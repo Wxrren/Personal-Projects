@@ -102,6 +102,7 @@ nav > ul {
   width: 50%;
   text-align: start;
   margin: 10px auto 10px auto;
+  
 }
 
 #password, #email {
@@ -109,15 +110,19 @@ nav > ul {
   width: 250px;
 }
 
+.forgotten-password, .remember-me {
+display: inline-block;
+margin-left: 100px;
+}
 
-.sign-in-button 
-
-button {
+.sign-in-button > button {
   display: block;
   margin: 1px auto;
   width: 20%;
   padding: 1px;
   font-size: 20px;
-  background: linear-gradient(#FF7377, #66FFE5);
   border: 2px solid #3b3b4f;
+  font-family: sans-serif;
 }
+
+
