@@ -34,7 +34,8 @@
       <form method="post" action="https://Warren.com/practice-project/home-page">
         <section id="sign" role="region" aria-labelledby="sign-in">
           <div class="sign-in">
-          <h2 id="sign-in-prompt">Sign In</h2>
+            <div class="sign-in-emailPass">
+          <h2 id="sign-in-text">Sign In</h2>
           <div class="email">
             <label for="email"><strong>Email</strong></label>
             <input type="email" name="email" id="email" required/>
@@ -43,23 +44,31 @@
             <label for="password"><strong>password</strong></label>
             <input type="password" name="password" id="password" pattern="[a-z0-5]{8,}" required/>
           </div>
+        </div>
+          <div class="check-link">
           <div class="remember-me">
             <label for="rememberME">Remember Me</label>
             <input type="checkbox" value="isRememberMe" name="rememberME" id="rememberME" /></div>
           <div class="forgotten-password">
             <a href="forgot-password.html"><strong>Forgot Password</strong></a>
           </div>
+        </div>
           <div class="sign-in-button">
-            <button type="submit" class=""sign-in value="Login" onclick="IsRememberMe()">Sign In</button>
+            <button type="submit" class="sign-in" value="Login" onclick="IsRememberMe()">Sign In</button>
           </div>
         </div>
-          <!--additional sign in options-->
+          <!--Divider-->
         <div class="options">
-          <p>OR</p>
+          <div class="lines">
+          <div class="or"><p class="or-text">or</p></div>
         </div>
+        </div>
+        <!--additional sign in options-->
+        <div class="separate">
         <div class="google">
           <button type="submit"><i class="fa fa-google" aria-hidden="true"></i> Continue with google</button>
         </div>
+      </div>
         <div class="join-now">
           <button type="submit">New? Join Now</button>
         </div>
